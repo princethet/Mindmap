@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vinegar: History & Versatility - Mind Map</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- MindElixir Library from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/mind-elixir/dist/mind-elixir.js"></script>
+  <script>
+    const mind = new MindElixir({
+      el: '#map',
+      direction: MindElixir.SIDE,
+      data: {
+        nodeData: {
+          id: 'root',
+          topic: 'Vinegar: History & Versatility',
+          children: [
+            {
+              topic: 'Origin of Vinegar',
+              children: [
+                { topic: 'Timeless Elixir from Nature' },
+                { topic: 'Used for Thousands of Years' },
+                { topic: 'Accidental Discovery' }
+              ]
+            },
+            {
+              topic: 'Vinegar in Ancient Civilizations',
+              children: [
+                { topic: 'Babylonians (circa 5000 BC)' },
+                { topic: 'Egyptians' },
+                { topic: 'Greeks' },
+                { topic: 'Romans' }
+              ]
+            },
+            { topic: 'Science Behind It' },
+            { topic: 'Global Evolution of Vinegar' },
+            { topic: 'Modern Uses' },
+            { topic: 'Conclusion' }
+          ]
+        },
+        linkData: {}
+      },
+      editable: false,
+    });
+    mind.init();
+  </script>
+</body>
+</html>
